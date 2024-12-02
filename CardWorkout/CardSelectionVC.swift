@@ -14,7 +14,7 @@ class CardSelectionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         for button in buttons {
             button.layer.cornerRadius = 8
         }        // Do any additional setup after loading the view.
@@ -30,6 +30,9 @@ class CardSelectionVC: UIViewController {
     
     @IBAction func rulesButtonTapped(_ sender: Any) {
     }
-
-
+    
+    
+    @IBAction func rulesCloseButton(unwindSegue: UIStoryboardSegue){
+        
+    }
 }

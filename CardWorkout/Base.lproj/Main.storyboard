@@ -106,11 +106,31 @@
                     <view key="view" contentMode="scaleToFill" id="pvr-OZ-TV3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" role="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="FO1-hJ-xro">
+                                <rect key="frame" x="323" y="30" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="TSt-Os-hUH"/>
+                                    <constraint firstAttribute="height" constant="40" id="WrO-X5-R2w"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="gray" cornerStyle="capsule" buttonSize="medium"/>
+                                <connections>
+                                    <action selector="rulesCloseButton:" destination="8bb-gV-K7z" eventType="touchUpInside" id="DNh-Fx-jXL"/>
+                                    <segue destination="8bb-gV-K7z" kind="unwind" unwindAction="rulesCloseButtonWithUnwindSegue:" id="j7A-vn-Wv8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rXU-ah-yp5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rXU-ah-yp5" firstAttribute="trailing" secondItem="FO1-hJ-xro" secondAttribute="trailing" constant="30" id="dEy-za-Xpu"/>
+                            <constraint firstItem="FO1-hJ-xro" firstAttribute="top" secondItem="rXU-ah-yp5" secondAttribute="top" constant="30" id="ipa-q5-ihe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iWr-1Q-67d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8bb-gV-K7z" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1071" y="5"/>
         </scene>

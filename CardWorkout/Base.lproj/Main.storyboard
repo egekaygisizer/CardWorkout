@@ -120,12 +120,51 @@
                                     <segue destination="8bb-gV-K7z" kind="unwind" unwindAction="rulesCloseButtonWithUnwindSegue:" id="j7A-vn-Wv8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8c-Hm-73y">
+                                <rect key="frame" x="30" y="70" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzF-YC-Lp7">
+                                <rect key="frame" x="30" y="210" width="333" height="81.333333333333314"/>
+                                <string key="text">Value of each card represents the number of exercise you do.
+
+J = 11, Q = 12, K = 13, A = 14</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpm-Fo-XLN">
+                                <rect key="frame" x="96.666666666666686" y="354" width="200" height="142.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="NLQ-wQ-CUo"/>
+                                </constraints>
+                                <string key="text">♠️ = Push-up
+
+♥️ = Sit-up
+
+♣️ = Burpee
+
+♦️ = Jumping Jacks</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rXU-ah-yp5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rXU-ah-yp5" firstAttribute="trailing" secondItem="gzF-YC-Lp7" secondAttribute="trailing" constant="30" id="0Ev-wr-hTm"/>
+                            <constraint firstItem="rXU-ah-yp5" firstAttribute="trailing" secondItem="a8c-Hm-73y" secondAttribute="trailing" constant="30" id="MGs-Qy-rwz"/>
+                            <constraint firstItem="gzF-YC-Lp7" firstAttribute="top" secondItem="a8c-Hm-73y" secondAttribute="bottom" constant="119" id="MZj-iS-McX"/>
+                            <constraint firstItem="gzF-YC-Lp7" firstAttribute="leading" secondItem="rXU-ah-yp5" secondAttribute="leading" constant="30" id="PBy-PC-5WY"/>
                             <constraint firstItem="rXU-ah-yp5" firstAttribute="trailing" secondItem="FO1-hJ-xro" secondAttribute="trailing" constant="30" id="dEy-za-Xpu"/>
+                            <constraint firstItem="a8c-Hm-73y" firstAttribute="leading" secondItem="rXU-ah-yp5" secondAttribute="leading" constant="30" id="h4e-Ve-d9V"/>
+                            <constraint firstItem="wpm-Fo-XLN" firstAttribute="centerX" secondItem="pvr-OZ-TV3" secondAttribute="centerX" id="ih3-LO-fLU"/>
                             <constraint firstItem="FO1-hJ-xro" firstAttribute="top" secondItem="rXU-ah-yp5" secondAttribute="top" constant="30" id="ipa-q5-ihe"/>
+                            <constraint firstItem="a8c-Hm-73y" firstAttribute="top" secondItem="rXU-ah-yp5" secondAttribute="top" constant="70" id="vJK-h0-Nhz"/>
+                            <constraint firstItem="wpm-Fo-XLN" firstAttribute="top" secondItem="gzF-YC-Lp7" secondAttribute="bottom" constant="62.670000000000002" id="xsk-1d-ENk"/>
                         </constraints>
                     </view>
                 </viewController>

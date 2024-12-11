@@ -13,23 +13,26 @@ class CardSelectionVC: UIViewController {
     @IBOutlet var buttons: [UIButton]!
     
     var timer : Timer!
-    var card : [UIImage] = []
+    var card : [UIImage] = Decks.AllCards
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        startTimer()
         for button in buttons {
             button.layer.cornerRadius = 8
         }
-        
-        let deck = Decks()  // Decks nesnesi oluşturuluyor
-        card = deck.AllCards
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) { // ekranı kapatırken veya minimalize ettiğinde yapılacak fonksiyon.
+        super.viewWillDisappear(animated)
+        timer.invalidate()
     }
     
     
     
     func startTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector (updateCards), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector (updateCards), userInfo: nil, repeats: true)
     }
     
     @objc func updateCards() {

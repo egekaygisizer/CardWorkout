@@ -8,7 +8,7 @@
 import UIKit
 
 struct Decks {
-    var AllCards: [UIImage] = [
+    static var AllCards: [UIImage] = [
         UIImage(named: "2H")!,
         UIImage(named: "3H")!,
         UIImage(named: "4H")!,

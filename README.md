@@ -28,4 +28,4 @@ This is a card workout application developed using Storyboard in Swift. It displ
 
 ## Acknowledgments
 
-This project was developed as part of the Sean Allen’s iOS Development Course. A special thanks to Sean Allen for providing excellent resources and guidance throughout the course.
+This project was developed as part of the Sean Allen’s iOS Development - Swift, UIKit Course.
